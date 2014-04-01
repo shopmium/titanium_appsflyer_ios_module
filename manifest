@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Appsflyer iOS SDK integration
+author: Shopmium (Arnaud Besnier)
+license: no license
+copyright: Copyright © 2014
+
+
+# these should not be edited
+name: iphone
+moduleid: com.shopmium.appsflyer
+guid: 38a005b3-4032-47dc-b015-a5eaa141e1c8
+platform: iphone
+minsdk: 3.2.1.GA
