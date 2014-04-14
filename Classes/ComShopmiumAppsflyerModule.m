@@ -111,7 +111,7 @@
 	[[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
 
--(void)trackEvent:(id)args
+-(void)trackAction:(id)args
 {
 	NSString *eventName  = [args objectAtIndex:0];
 	NSString *eventValue = [args objectAtIndex:1];
