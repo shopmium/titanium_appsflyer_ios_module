@@ -89,8 +89,8 @@
 -(void)startTracker:(id)args
 {
 
-	NSString *appsFlyerDevKey = [args objectAtIndex:0];
-	NSString *appleAppID      = [args objectAtIndex:1];
+	NSString *appleAppID      = [args objectAtIndex:0];
+	NSString *appsFlyerDevKey = [args objectAtIndex:1];
 
 	[AppsFlyerTracker sharedTracker].appsFlyerDevKey = appsFlyerDevKey;
 	[AppsFlyerTracker sharedTracker].appleAppID      = appleAppID;
