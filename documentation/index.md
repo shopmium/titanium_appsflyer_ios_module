@@ -17,7 +17,7 @@ The appsflyer variable is a reference to the Module object.
 
 1. Initialization (mandatory)
 var appsflyer = require('com.shopmium.appsflyer');
-appsflyer.startTracker('APPSFLYER_APP_ID', 'APPSFLYER_DEV_KEY');
+appsflyer.startTracker('APPSFLYER_DEV_KEY', 'APPSFLYER_APP_ID');
 
 2. Set install id (optional)
 appsflyer.setInstallId('unique_user_id');
