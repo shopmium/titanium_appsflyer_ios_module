@@ -2,7 +2,7 @@
 //  AppsFlyerTracker.h
 //  AppsFlyerLib
 //
-//  AppsFlyer iOS SDK v2.5.3.7
+//  AppsFlyer iOS SDK v2.5.3.11
 //  22-Feb-2013
 //  Copyright (c) 2013 AppsFlyer Ltd. All rights reserved.
 //
@@ -11,6 +11,7 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <StoreKit/StoreKit.h>
 
 /*
  * This delegate should be use if you want to use AppsFlyer conversion data. See AppsFlyer iOS
@@ -21,7 +22,7 @@
 @optional
 - (void) onConversionDataReceived:(NSDictionary*) installData;
 - (void) onConversionDataRequestFailure:(NSError *)error;
-
+- (void) onAppOpenAttribution:(NSDictionary*) installData;
 @end
 
 @interface AppsFlyerTracker : NSObject<AppsFlyerTrackerDelegate> {
@@ -30,12 +31,15 @@
     NSString* appleAppID;
     NSString* currencyCode;
     BOOL deviceTrackingDisabled;
-        
-    BOOL isDebug;
+    
+    BOOL _isDebug;
     
     BOOL isHTTPS;
     
     BOOL disableAppleAdSupportTracking;
+
+    BOOL disableIAdTracking;
+    
 }
 
 /* In case you use your own user ID in your app, you can set this property to that ID. */
@@ -66,12 +70,22 @@
  * Prints our messages to the log. This property should only be used in DEBUG mode. The default value 
  * is NO.
  */
-@property BOOL isDebug;
+@property (nonatomic, setter = setIsDebug:) BOOL isDebug;
 
 /*
  * Opt-out tracking for specific user
  */
 @property BOOL deviceTrackingDisabled;
+
+/*
+ * Opt-out tracking for iAd attributions
+ */
+@property BOOL disableIAdTracking;
+
+/*
+ * AppsFlyer delegate. See AppsFlyerTrackerDelegate abvoe
+ */
+@property (assign, nonatomic) id<AppsFlyerTrackerDelegate> delegate;
 
 +(AppsFlyerTracker*) sharedTracker;
 
@@ -85,6 +99,12 @@
  */
 - (void) trackEvent:(NSString*)eventName withValue:(NSString*)value;
 
+/*
+ * To track in app purchases you can call this method from the completeTransaction: method on 
+ * your SKPaymentTransactionObserver.
+ */
+//- (void) trackInAppPurchase:(SKPaymentTransaction *)transaction;
+
 /* 
  * This method returns AppsFLyer's internal user ID (unique for your app) 
  */
@@ -94,6 +114,11 @@
  * In case you want to use AppsFlyer tracking data in your app you can use the following method set a
  * delegate with callbakc buttons for the tracking data. See AppsFlyerTrackerDelegate above.
  */
-- (void) loadConversionDataWithDelegate:(id<AppsFlyerTrackerDelegate>) delegate;
+- (void) loadConversionDataWithDelegate:(id<AppsFlyerTrackerDelegate>) delegate __attribute__((deprecated));
+
+/*
+ * In case you want to track deep linking, call this method from your delegate's openURL method.
+ */
+- (void) handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication;
 
 @end

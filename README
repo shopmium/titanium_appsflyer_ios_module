@@ -17,3 +17,12 @@ appsflyer.trackAppLaunch();
 4. Track custom events (optional)
 appsflyer.trackAction('register', '');
 appsflyer.trackAction('purchase', '$3.75');
+
+CHANGE LOG
+----------
+
+v1.1
+----
+
+- upgrade to AppsFlyer SDK 2.5.3.11
+- upgrade module to 64-bit
