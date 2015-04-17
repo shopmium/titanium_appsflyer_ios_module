@@ -26,11 +26,11 @@
 		24DD6CFA1134B3F500162E58 /* ComShopmiumAppsflyerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComShopmiumAppsflyerModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.m */; };
-		34E61D0118E96B520091949D /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B196F95C18E439C900C7D40F /* libAppsFlyerLib.a */; };
+		346011151ADC050F00B245E7 /* AppsFlyerTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 346011131ADC050F00B245E7 /* AppsFlyerTracker.h */; };
+		346011161ADC050F00B245E7 /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 346011141ADC050F00B245E7 /* libAppsFlyerLib.a */; };
+		346011181ADC072900B245E7 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346011171ADC072900B245E7 /* iAd.framework */; };
 		AA747D9F0F9514B9006C5449 /* ComShopmiumAppsflyer_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComShopmiumAppsflyer_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		B196F95D18E439C900C7D40F /* AppsFlyerTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B196F95B18E439C900C7D40F /* AppsFlyerTracker.h */; };
-		B1DEA7CA18E42D830068C5A8 /* AppsFlyerTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DEA7C918E42D830068C5A8 /* AppsFlyerTracker.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +49,11 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComShopmiumAppsflyerModuleAssets.h; path = Classes/ComShopmiumAppsflyerModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComShopmiumAppsflyerModuleAssets.m; path = Classes/ComShopmiumAppsflyerModuleAssets.m; sourceTree = "<group>"; };
+		346011131ADC050F00B245E7 /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTracker.h; sourceTree = "<group>"; };
+		346011141ADC050F00B245E7 /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
+		346011171ADC072900B245E7 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		AA747D9E0F9514B9006C5449 /* ComShopmiumAppsflyer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComShopmiumAppsflyer_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B196F95B18E439C900C7D40F /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTracker.h; sourceTree = "<group>"; };
-		B196F95C18E439C900C7D40F /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
-		B1DEA7C918E42D830068C5A8 /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyerTracker.h; path = "../../../../../Downloads/AF-iOS-SDK-v2.5.3.7/AppsFlyerTracker.h"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libComShopmiumAppsflyer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComShopmiumAppsflyer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34E61D0118E96B520091949D /* libAppsFlyerLib.a in Frameworks */,
+				346011181ADC072900B245E7 /* iAd.framework in Frameworks */,
+				346011161ADC050F00B245E7 /* libAppsFlyerLib.a in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +82,7 @@
 		0867D691FE84028FC02AAC07 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
-				B196F95A18E439C900C7D40F /* AF-iOS-SDK-v2.5.3.7 */,
+				346011121ADC050F00B245E7 /* AF-iOS-SDK-v2.5.3.14.1 */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -93,6 +94,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				346011171ADC072900B245E7 /* iAd.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -112,20 +114,19 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B1DEA7C918E42D830068C5A8 /* AppsFlyerTracker.h */,
 				AA747D9E0F9514B9006C5449 /* ComShopmiumAppsflyer_Prefix.pch */,
 				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		B196F95A18E439C900C7D40F /* AF-iOS-SDK-v2.5.3.7 */ = {
+		346011121ADC050F00B245E7 /* AF-iOS-SDK-v2.5.3.14.1 */ = {
 			isa = PBXGroup;
 			children = (
-				B196F95B18E439C900C7D40F /* AppsFlyerTracker.h */,
-				B196F95C18E439C900C7D40F /* libAppsFlyerLib.a */,
+				346011131ADC050F00B245E7 /* AppsFlyerTracker.h */,
+				346011141ADC050F00B245E7 /* libAppsFlyerLib.a */,
 			);
-			path = "AF-iOS-SDK-v2.5.3.7";
+			path = "AF-iOS-SDK-v2.5.3.14.1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +138,7 @@
 			files = (
 				AA747D9F0F9514B9006C5449 /* ComShopmiumAppsflyer_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComShopmiumAppsflyerModule.h in Headers */,
-				B196F95D18E439C900C7D40F /* AppsFlyerTracker.h in Headers */,
-				B1DEA7CA18E42D830068C5A8 /* AppsFlyerTracker.h in Headers */,
+				346011151ADC050F00B245E7 /* AppsFlyerTracker.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComShopmiumAppsflyerModuleAssets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +251,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/AF-iOS-SDK-v2.5.3.7";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v2.5.3.14.1";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -289,7 +289,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/AF-iOS-SDK-v2.5.3.7";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v2.5.3.14.1";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComShopmiumAppsflyer;
