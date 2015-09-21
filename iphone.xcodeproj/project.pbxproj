@@ -82,7 +82,7 @@
 		0867D691FE84028FC02AAC07 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
-				346011121ADC050F00B245E7 /* AF-iOS-SDK-v2.5.3.14.1 */,
+				346011121ADC050F00B245E7 /* AF-iOS-SDK-v3.3.0 */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -120,13 +120,13 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		346011121ADC050F00B245E7 /* AF-iOS-SDK-v2.5.3.14.1 */ = {
+		346011121ADC050F00B245E7 /* AF-iOS-SDK-v3.3.0 */ = {
 			isa = PBXGroup;
 			children = (
 				346011131ADC050F00B245E7 /* AppsFlyerTracker.h */,
 				346011141ADC050F00B245E7 /* libAppsFlyerLib.a */,
 			);
-			path = "AF-iOS-SDK-v2.5.3.14.1";
+			path = "AF-iOS-SDK-v3.3.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +251,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v2.5.3.14.1";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v3.3.0";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -289,7 +289,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v2.5.3.14.1";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/AF-iOS-SDK-v3.3.0";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComShopmiumAppsflyer;
